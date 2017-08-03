@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.kishan.test.MainActivity">
+
+    <EditText
+        android:id="@+id/et_jobid"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="1dp"
+        android:layout_weight="3"
+        android:ems="10"
+        android:hint="Please Enter Job Id...."
+        android:imeOptions="actionDone"
+        android:padding="5dp"
+        android:textSize="25sp" >
+    </EditText>
+
+    <android.inputmethodservice.KeyboardView
+        android:id="@+id/keyboardview"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:visibility="visible"
+        android:layout_below="@+id/et_jobid"
+        android:layout_marginRight="10dp"/>
+
+</RelativeLayout>
