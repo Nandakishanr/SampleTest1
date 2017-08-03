@@ -6,6 +6,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.ViewGroup;
 import android.widget.EditText;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -21,5 +22,7 @@ public class MainActivity extends AppCompatActivity {
         CustomKeyboard mCustomKeyboard = new CustomKeyboard(this, viewGroup,
                 R.id.keyboardview, R.xml.qwerty);
         mCustomKeyboard.registerEditText(etjobid.getId());
+
+        Toast.makeText(MainActivity.this, "", Toast.LENGTH_SHORT).show();
     }
 }
